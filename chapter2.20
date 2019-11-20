@@ -1,0 +1,22 @@
+/*Diameter, Circumferenceand Area of a Circle) Write a program that reads in the radius of
+a circle as an integerand prints the circle’s diameter, circumferenceand area.Use the constant value
+3.14159 for π.Do all calculations in output statements.[Note:In this chapter, we’ve discussed only
+integer constants and variables.In Chapter 4 we discuss floating - point numbers, i.e., values that can
+have decimal points.]*/
+
+#include<iostream>
+using namespace std;
+const double pie = 3.14159;
+int main()
+{
+	int diameters, circumfrences,radius,area;
+	cout << "enter the radius" << endl;
+	cin >> radius;
+	diameters = radius * 2;
+	cout << "diameters =" << diameters << endl;
+	circumfrences = 2 * pie * radius;
+	cout << "circumfrences =" << circumfrences << endl;
+	area = pie * radius * radius;
+	cout << "area =" << area << endl;
+	return 0;
+}
