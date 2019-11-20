@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	double inches, feets, centimeters;
+	cout << "enter lenght in inches" << endl;
+	cin >> inches;
+	cout << "enter lenght in feets" << endl;
+	cin >> feets;
+	centimeters = (inches * 12) + feets;
+	cout << "centimeters = " << centimeters << endl;
+	return 0;
+}
