@@ -1,0 +1,26 @@
+/*(Odd or Even) Write a program t/*hat reads an integerand determinesand prints whether
+it’s odd or even.[Hint:Use the modulus operator. An even number is a multiple of two.Any multiple of two leaves a remainder of zero when divided by 2.]*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int num;
+
+
+	cout << "Enter a number: ";
+	cin >> num;
+
+	if (num % 2 == 0)
+	{
+		cout << "The number " << num << " is even." << endl;
+	}
+	else
+	if (num % 2 != 0)
+	{ 
+		cout << "The number " << num << " is odd." << endl;
+		}
+	return 0;
+}
