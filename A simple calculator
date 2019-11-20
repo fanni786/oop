@@ -1,0 +1,44 @@
+#include<iostream>
+
+using namespace std;
+
+
+int main()
+{
+	cout << "A simple calculater created by Affan khayali please enter any number." << endl;
+	double num1, num2;
+	cout << "Enter number 1" << endl;
+	cin >> num1;
+
+	cout << "Enter number 2" << endl;
+	cin >> num2;
+	int sum = num1 + num2;
+	cout << "the sum is:" << sum << endl;
+	
+	cout << "enter num1" << endl;
+	cin >> num1;
+	cout << "enter num2" << endl;
+	cin >> num2;
+	double diff = num1 - num2;
+	cout << "the diff is:" << diff << endl;
+	
+	cout << "enter num1" << endl;
+	cin >> num1;
+	cout << "enter num2" << endl;
+	cin >> num2;
+	double multi = num1 * num2;
+	cout << "the multi is:" << multi << endl;
+	cout << "enter num1" << endl;
+	cin >> num1;
+	cout << "enter num2" << endl;
+	cin >> num2;
+	double div = num1 / num2;
+	cout << "the div is:" << div << endl;
+		
+	return 0;
+
+
+}
+
+
+
