@@ -1,0 +1,30 @@
+// application to calculate pool savings
+
+ #include <iostream>
+using namespace std;
+	int main()
+
+{
+
+	double miles, gas, average, parking, tolls, total;
+
+	cout << " enter miles" << endl;
+	cin >> miles;
+	cout << " enter gas" << endl;
+	cin >> gas;
+
+	cout << " enter average" << endl;
+	cin >> average;
+
+	cout << "enter parking" << endl;
+	cin >> parking;
+	cout << "enter tolls" << endl;
+	cin >> tolls;
+
+
+
+	total = (miles * gas) / (average + parking + tolls);
+
+	cout << "total =" << total << endl;
+	return 0;
+}
