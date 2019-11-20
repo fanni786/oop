@@ -1,0 +1,50 @@
+/*(Largestand Smallest Integers) Write a program that reads in five integersand determines
+and prints the largestand the smallest integers in the group.Use only the programming techniques
+you learned in this chapter*/
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num1, num2, num3, num4, num5, largest, smalest;
+	cout << "enter five integers" << endl;
+	cin >> num1 >> num2 >> num3 >> num4 >> num5;
+	largest = num1;
+	smalest = num2;
+	if (num1 > largest)
+		largest = num1;
+	
+	if (num2 > largest)
+		largest = num2;
+
+	if (num3 = largest)
+		largest = num3;
+	
+	if (num4 > largest)
+		largest = num4;
+	
+	if (num5 > largest)
+       largest = num5;
+
+	{
+		cout << "it is largest =" << largest << endl;
+	}
+	
+	if (num1 < smalest)
+		smalest = num1;
+	else
+	if (num2 < smalest)
+		smalest = num2;
+	else
+	if (num3 < smalest)
+		smalest = num3;
+	else
+	if (num4 < smalest)
+		smalest = num4;
+	else
+	if (num5 < smalest)
+		smalest = num5;
+	{
+		cout<< "it is smalest =" << smalest << endl;
+	}
+	return 0;
+}
