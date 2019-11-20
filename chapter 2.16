@@ -1,0 +1,18 @@
+/*(Arithmetic)Write a program that asks the user to enter two numbers, obtains the two
+numbers from the userand prints the sum, product, difference, and quotient of the two numbers.*/
+#include<iostream>
+using namespace std;
+int main()
+{
+	double num1, num2;
+	cout << "enter num 1" << endl;
+	cin >> num1;
+	cout << "enter num2" << endl;
+	cin >> num2;
+	double sum = num1 + num2;
+	double difference = num1 - num2;
+	double product = num1 * num2;
+	double quotient = num1 / num2;
+	cout << "sum = " << sum << "   difference = " << difference << "   product =" << product << "   quotient =" << quotient << endl;
+	return 0;
+}
