@@ -1,0 +1,11 @@
+(Using a Class Without a using Directive) Explain how a program could use class string
+without inserting a using directive.?
+
+If you mean you want to use std::string without using namespace std;statement, you simply qualify the names 
+from std namespace; i.e. write std::string.
+
+BTW, don’t use using namespace std; statement. IMO it’s a bad idea, particularly in header files. 
+“Importing” all the names from the standard namespace may (and will) very likely lead to a lot of name clashes. 
+That’s why the std namespace identifier is so short; so that it doesn’t bother you that you qualify your names.
+Example:
+std namespace identifier
