@@ -1,0 +1,15 @@
+ #include <iostream>
+ #include <string>
+ #include "HealthProfile.h"
+ using namespace std;
+ 
+ int main()
+ {
+ string first; 
+ 
+ cout << "Please enter first name:n";
+ cin >> first;
+ 
+ HealthProfile profile( first );
+ 
+ } 
