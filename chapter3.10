@@ -1,0 +1,20 @@
+Set and Get Functions) Explain why a class might provide a set function and a get function
+for a data member?
+
+I've been told not to make my variables public inside a class. I should always make a get and a set function.
+For example :
+class Whatever
+{
+
+public:
+	void setSentence(const std::string& str) { sentence = str; }
+	void setAnInteger(const int integer) { anInteger = integer; }
+
+	std::string getSentence() { return sentence; }
+	int getAnInteger() { return anInteger; }
+
+private:
+	std::string sentence;
+	int anInteger;
+
+};
