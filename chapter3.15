@@ -1,0 +1,107 @@
+#include <iostream>
+#include <cstdlib>
+#include "Date. h"
+using std: : cout;
+using std: : endl;
+using std: : cin;
+int main()
+{
+
+MyDate mDate( 9, 25, 2012 ) ;
+mDate. displayDate() ;
+cout << "I can guess your birthday. \n"
+<< "Please complete following steps and enter final number. \n"
+<< "1. Multiply the DAY of month in which you were born by 2. \n"
+<< "2. Add 5 to new number. \n"
+<< "3. Multiply new number by 50. \n"
+<< "4. Add the number that represents the month\n(1‐January, 2‐February etc) to new number. \n"
+
+<< "5. Enter the result: ";
+int result;
+cin >> result;
+mDate. guessBirthday(result) ;
+// to pause
+char a;
+cin >> a;
+return 0;
+}
+
+#include <cstdio>
+#include <cstdlib>
+#include <iostream>
+class MyDate
+{
+public:
+MyDate(int, int, int) ;
+int getDay() ;
+void setDay(int) ;
+int getMonth() ;
+void setMonth(int) ;
+int getYear() ;
+void setYear(int) ;
+void displayDate() ; // display function
+void guessBirthday(int) ;
+private:
+int day;
+int month;
+int year;
+};
+#include <iostream>
+using std: : cout;
+using std: : endl;
+#include "Date. h"
+MyDate: : MyDate(int month, int day, int year)
+{
+if(month < 1| | month >12)
+{
+setMonth(1) ;
+cout << "Month set as 1" << endl;
+}
+else
+setMonth(month) ;
+setDay(day) ;
+setYear(year) ;
+}
+int MyDate: : getDay()
+{
+return day;
+}
+int MyDate: : getMonth()
+{
+return month;
+}
+
+
+int MyDate: : getYear()
+{
+return year;
+}
+
+void MyDate: : setDay(int d)
+{
+day = d;
+}
+void MyDate: : setMonth(int m)
+{
+month = m;
+}
+
+void MyDate: : setYear(int y)
+{
+year = y;
+}
+void MyDate: : displayDate()
+{
+cout << getMonth() << "/" << getDay() << "/" << getYear() << endl;
+}
+
+void MyDate: : guessBirthday(int res)
+{
+int x;
+x = res ‐ 250;
+setDay(x / 100) ;
+setMonth(x % 100) ;
+
+
+cout << "Your birthday: Month: " << getMonth() << " Day: " << getDay() << endl;
+}}
